@@ -170,9 +170,6 @@ void playGame()
 	//Destruction of the Terminal object returns the screen to normal shell mode
 	delete t;
 	
-
-	// TODO Figure out why I need (void)join all threads and print out the result
-	//  ignoring the return value is safe and intended?
 	/*
 		.get() waits for the thread to finish. You need that before deleting spaceShip and the managers, or a thread could use freed memory.
 		(void) shows you are intentionally ignoring the ship’s return value.
