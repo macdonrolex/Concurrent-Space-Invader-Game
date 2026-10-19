@@ -25,7 +25,7 @@ The game uses `std::barrier` to create two phases for each frame. Between the ph
 ## Enemies
 Each enemy is a bouncing ball that has 3 shapes and 4 states: full (A), squished (B, D), and flat line (C). The states cycle as A -> B -> C -> D -> A -> B -> C -> D… Since B and D share the same shape, we can see the ball cycling between a full circle and a flat line.
 From the picture below, we can see that states A, B, and D have 16 pixels, and state C has 11 pixels. The blue numbers represent the row and column coordinates of each pixel, e.g., 0 is `row[0]` and `col[0]`.
-![Enemy: A ball keeps bouncing](docs/images/ball.png)
+![Enemy: A ball keeps bouncing](docs/images/ball(enemy).png)
 
 ## Spaceship
 A controllable spaceship that can fire bullets. A ship has a vector that stores all the fired bullets.
