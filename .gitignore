@@ -433,3 +433,4 @@ FodyWeavers.xsd
 *.pages
 *.bin
 *.o
+*.d

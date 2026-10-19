@@ -18,11 +18,15 @@ valgrind:
 	valgrind -s --leak-check=full ./P1.bin
 
 # For mac checking memory leak
-check: all
+check : all
 	leaks --atExit -- ./P1.bin
 
 clean :
 	rm -f *.o *.bin *.d
+
+# Play the game
+play : all
+	./P1.bin
 
 # Tell `make` to actually read and use those .d files on the next incremental 
 # build(already has .o and .d)
